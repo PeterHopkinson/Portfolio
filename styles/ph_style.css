@@ -1,0 +1,69 @@
+:root {
+    --background: #ffffff;
+    --colour1: #010e1b;
+    --colour2: #e06b08;
+    --colour3: #f24f4f;
+    --colour4: #dee2e6;
+    --colour5: #f0ad8f;
+}
+
+body {
+    background-color: var(--background);
+    font-family: "Courier New", monospace;
+    color: var(--colour1);
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: var(--colour1);
+}
+
+h2 {
+    color: var(--colour2);
+}
+
+#top_bar {
+    width: 100%;
+    height: 10px;
+    background: var(--colour3);
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    z-index: -21;
+}
+#left_bar {
+    width: 10px;
+    height: 100%;
+    background: var(--colour3);
+    position: fixed;
+    top: 0px;
+    left: 8px;
+    z-index: -22;
+}
+#left_bar_wide {
+    width: 40px;
+    height: 100%;
+    background: var(--colour2);
+    position: fixed;
+    top: 0px;
+    left: 25px;
+    z-index: -20;
+}
+#owl {
+    width: 40%;
+    height: 70%;
+    position: fixed;
+    top: 15%;
+    left: 60%;
+    z-index: -24;
+    background: white;
+    clip-path: circle(20% at 30% 30%);
+}
+#main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 25px;
+    left: 85px;
+}
