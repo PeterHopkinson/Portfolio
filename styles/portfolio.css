@@ -5,10 +5,62 @@
     line-height: 0;
 }
 
+#skillset {
+    color: var(--colour2);
+    font-size: 40px;
+    line-height: 1;
+}
+
+#typing_marker {
+    color: var(--colour1);
+    font-size: 40px;
+    line-height: 1;
+}
+
 #bold_main {
     width: 80%;
     height: 80%;
     position: fixed;
-    top: 15%;
+    top: 13%;
     left: 10%;
+}
+
+.project_container {
+    background: var(--background);
+    border-color: var(--colour1);
+    border-width: 4px;
+    border-radius: 6px;
+    border-style: solid;
+    box-shadow: 5px 5px var(--colour5);
+    height: 50px;
+    width: 1250px;
+}
+.project_title {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    text-align: center;
+    color: var(--colour1);
+    background: var(--colour4);
+    height: 40px;
+    width: 350px;
+    padding: 5px;
+    float: left;
+
+    
+}
+.project_text {
+    border-style: none solid none solid;
+    border-color: var(--colour1);
+    border-width: 1px;
+    height: 42px;
+    width: 680px;
+    padding: 5px;
+    float: left;
+}
+.project_image {
+    height: 46;
+    width: 180px;
+    padding: 2px 0;
+    float: right;
 }

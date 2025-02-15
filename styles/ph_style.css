@@ -20,7 +20,12 @@ h1 {
 }
 
 h2 {
-    color: var(--colour2);
+    color: var(--colour3);
+}
+
+a {
+    text-decoration: none;
+    color: var(--colour1);
 }
 
 #top_bar {
@@ -59,6 +64,7 @@ h2 {
     z-index: -24;
     background: white;
     clip-path: circle(20% at 30% 30%);
+    display: none;
 }
 #main {
     width: 100%;

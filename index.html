@@ -10,13 +10,9 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 </head>
 
 <body>
-  <div></div>
   <div id="top_bar"></div>
   <div id="left_bar_wide"></div>
   <div id="left_bar"></div>
@@ -24,102 +20,104 @@
   <div id="bold_main">
 
     <h1 id="name">Peter Hopkinson</h1>
-    <p>Text</p>
-    <p>I'm <span class="typing" style="color:#12D640"></span></p>
-    <h2></h2>
+    <p><span id="skillset"></span><span id="typing_marker">|</span></p>
 
-      <div class="social-links">
-          <a href="mailto:peter.m.hopkinson@googlemail.com" target="_blank" class="google"><i class='bx bxs-envelope'></i></a>
-          <a href="https://github.com/PeterHopkinson" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-          ?? OR society
-      </div>
+    <h2>Recent</h2>
 
-      <br>
-      <h2>Demos</h2>
-      <br>
-
-      <div class="container">
-        <div class="row m-2 d-flex align-items-baseline">
-          <a href="https://github.com/PeterHopkinson/SICS" class="btn btn-light col-md-2 text-truncate" role="button">
-            Searchlight Inefficient Compression Scheme
-          </a> <span> &nbsp;   Python script with tests </span>
+    <a href="https://hopkinsonp.eu.pythonanywhere.com/" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          Dash Report
+        </div>
+        <div class="project_text">
+          Web-app written using the dash python module.
+          <br>Simple analysis of public source data, presented in a BI-style report.
+        </div>
+        <div class="project_image">
+          <img src="images/plotly.svg" alt="plotly logo" height=48>
         </div>
       </div>
-
-      <br>
-      <h2>Demos</h2>
-      <br>
-
-      <div class="container">
-        <div class="row m-2 d-flex align-items-baseline">
-          <a href="https://github.com/PeterHopkinson/SICS" class="btn btn-light col-md-2 text-truncate" role="button">
-            Searchlight Inefficient Compression Scheme
-          </a> <span> &nbsp;   Python script with tests </span>
+    </a>
+    <br>
+    <a href="https://github.com/PeterHopkinson/GeneticAlgorithm" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          Genetic Algorithm
+          <br>(Go package)
+        </div>
+        <div class="project_text">
+          Genetic algorithm optimisation problem solver written in Go.
+          This is a library package with an example main() method to show intended use.
+        </div>
+        <div class="project_image">
+          <img src="images/gopher.png" alt="gopher" height="46">
+          <img src="images/golang-official.svg" alt="go logo" height="35">
         </div>
       </div>
+    </a>
+    <br>
+    <a href="https://github.com/PeterHopkinson/Snake-Problem" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          Snake Problem
+        </div>
+        <div class="project_text">
+          Simple python script to solve interview question
+        </div>
+        <div class="project_image">
+          <img src="images/python-official.svg" alt="python logo" height="48">
+        </div>
+      </div>
+    </a>
+    <br>
+    <a href="https://github.com/PeterHopkinson/SICS" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          Searchlight Inefficient Compression Scheme
+        </div>
+        <div class="project_text">
+          Simple python script with tests and type hints
+        </div>
+        <div class="project_image">
+          <img src="images/python-official.svg" alt="python logo" height="48">
+        </div>
+      </div>
+    </a>
 
-    </div>
+    <h2>Older</h2>
 
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script type="text/javascript">
-    var typed = new Typed('.typing',{
-      strings: ["Data Engineer", "Operational Research", "Software Engineer"],
-      loop: true,
-      typeSpeed: 65,
-      backSpeed: 65,
-      backDelay: 0
-    });
-  </script>
-  
-<script>
-    var i = 0;
-    var j = 0;
-    var txt = ['Term1','Term2','Term3','Term4'];
-    var seperator = ' / ';
-    var links = ['link1','link2','link3','link4'];
-    var speed = 100;    
+    <a href="https://github.com/PeterHopkinson/Rock-Classifier" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          Rock Classifier
+          <br>(computer vision)
+        </div>
+        <div class="project_text">
+          (pending)
+        </div>
+        <div class="project_image">
+          <img src="images/python-official.svg" alt="python logo" height="48">
+        </div>
+      </div>
+    </a>
+    <br>
+    <a href="https://github.com/PeterHopkinson/SSRS-Reports" class="project" role="button">
+      <div class="project_container">
+        <div class="project_title">
+          SSRS Reports
+        </div>
+        <div class="project_text">
+          (pending)
+        </div>
+        <div class="project_image">
+          <img src="images/SSRS.png" alt="SSRS logo" height="46">
+        </div>
+      </div>
+    </a>
 
-    function typeWriter() {
-          if (i < txt[j].length) {
-            if(! $("#c"+j).length){ //check the element is created or not
-                $("#typeIt").append("<a href='"+links[j]+"' id='c"+j+"'></a>"); // if it is not create element first
-            }
+  </div>
 
-            $("#c"+j).append(txt[j].charAt(i++));   //and append the next char
-            
-            setTimeout(typeWriter, speed);
-          }
-          else{
-            i=0;
-            if(++j < txt.length) {
-                $("#typeIt").append(seperator);
-                setTimeout(typeWriter, speed);
-            }
-          }
-          
-        }   
-
-    jQuery(document).ready(function() {
-        setTimeout(typeWriter, 300);
-    });
-  </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-<div id="typeIt">typeWriter("abcdefghijklmnopqrstuv")</div>
-
-
-
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</div>
+  <script src="scripts/ph_style_scripts.js"></script>
 
 </body>
-
 </html>
-
-
-
-<img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-ar21.svg" alt="vectorlogo.zone">
-<img src="https://www.vectorlogo.zone/logos/python/python-horizontal.svg" alt="vectorlogo.zone" height="50" width="150">
