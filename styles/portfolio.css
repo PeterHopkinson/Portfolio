@@ -59,6 +59,6 @@
 .project_image {
     height: 46px;
     width: 180px;
-    padding: 2px 2px;
-    float: right;
+    padding: 2px 4px;
+    float: left;
 }
