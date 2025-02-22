@@ -52,13 +52,13 @@
     border-color: var(--colour1);
     border-width: 1px;
     height: 42px;
-    width: 680px;
+    width: 690px;
     padding: 5px;
     float: left;
 }
 .project_image {
-    height: 46;
+    height: 46px;
     width: 180px;
-    padding: 2px 0;
+    padding: 2px 2px;
     float: right;
 }
